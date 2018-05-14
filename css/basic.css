@@ -1,0 +1,43 @@
+body, html{
+	padding: 0;
+	margin: 0;
+}
+body{
+	width: 100%;
+	font-size: 16px;
+	/*min-height: 760px;*/
+}
+.nav-tabs{
+	height: 50px;
+	background: rgba(100,96,84,0.7);
+}
+a:hover{
+	background: none;
+}
+a{
+	color: white;
+}
+#logo{
+	margin-top: -10px;
+}
+#channel{
+	background: url(../images/icon/logo.png)no-repeat center center;
+}
+#logoImg{
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+}
+#search{
+	border: none;
+	margin-top: 5px;
+	height: 40px;
+	background: url(../images/icon/search.png)no-repeat center center;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	color: white;
+    cursor: default;
+    background-color:  rgba(100,96,84,0);
+    border:none;
+    border-bottom: 7px solid white;
+}

@@ -4,28 +4,89 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/home.css" />
 		<link rel="stylesheet" type="text/css" href="../css/lib/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="../css/home.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/home.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lib/swiper.css" />
 
 	</head>
 
-	<body>
+	<body style="background: url(../images/bgImages/bg_item.png)no-repeat top center;">
 		<div class="container-fluid">
 			<div class="row">
 				<ul class="nav nav-tabs col-lg-12">
-					<li role="presentation" class="col-lg-2 text-center active"><a href="#">首页</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="#">工艺</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="#">CHANNEL</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="#">成果</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="#">关于</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="#">搜索图标</a></li>
+					<li role="presentation" class="col-lg-1 text-center">&ensp;</li>
+					<li role="presentation" class="col-lg-2 text-center active">
+						<a href="home.html">项目</a>
+					</li>
+					<li role="presentation" class="col-lg-2 text-center">
+						<a href="technology.html">工艺</a>
+					</li>
+					<li role="presentation" class="col-lg-2 text-center">
+						<a id="logo" href="index.html"><img id="logoImg" src="../images/bgImages/logo.png" /></a>
+					</li>
+					<li role="presentation" class="col-lg-2 text-center">
+						<a href="achieve.html">成果</a>
+					</li>
+					<li role="presentation" class="col-lg-2 text-center">
+						<a href="about.html">关于</a>
+					</li>
+					<li role="presentation" class="col-lg-1 text-center active">
+						<a id="search" href="search.html"></a>
+					</li>
 				</ul>
 			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<ul>
+						<li><img src="../images/icon/item1.png"/></li>
+						<li><img src="../images/icon/item2.png"/></li>
+						<li><img src="../images/icon/item3.png"/></li>
+						<li><img src="../images/icon/item4.png"/></li>
+						<li><img src="../images/icon/item5.png"/></li>
+						<li><img src="../images/icon/item6.png"/></li>
+						<li><img src="../images/icon/item7.png"/></li>
+						<li><img src="../images/icon/item8.png"/></li>
+						</ul>
+					</div>
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+	
+				<!-- 如果需要导航按钮 -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+	
+				<!-- 如果需要滚动条 -->
+				<div class="swiper-scrollbar"></div>
+			</div>
 		</div>
+		
 
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/lib/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/lib/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+//				direction: 'vertical',
+				loop: true,
+
+				// 如果需要分页器
+				pagination: {
+					el: '.swiper-pagination',
+				},
+
+				// 如果需要前进后退按钮
+				navigation: {
+					nextEl: '.swiper-button-next',
+					prevEl: '.swiper-button-prev',
+				}
+			})
+		</script>
 	</body>
 
 </html>
