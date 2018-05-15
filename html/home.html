@@ -8,30 +8,31 @@
 		<link rel="stylesheet" type="text/css" href="../css/home.css" />
 		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
 		<link rel="stylesheet" type="text/css" href="../css/lib/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lib/animation.css" />
 
 	</head>
 
-	<body style="background: url(../images/bgImages/bg_item.png)no-repeat top center;">
+	<body style="background: url(../images/bgImages/bg_item.png)repeat center center;">
 		<div class="container-fluid">
 			<div class="row">
-				<ul class="nav nav-tabs col-lg-12">
-					<li role="presentation" class="col-lg-1 text-center">&ensp;</li>
-					<li role="presentation" class="col-lg-2 text-center active">
+				<ul class="nav nav-tabs col-md-12">
+					<li role="presentation" class="col-md-1 text-center">&ensp;</li>
+					<li role="presentation" class="col-md-2 text-center active">
 						<a href="home.html">项目</a>
 					</li>
-					<li role="presentation" class="col-lg-2 text-center">
+					<li role="presentation" class="col-md-2 text-center">
 						<a href="technology.html">工艺</a>
 					</li>
-					<li role="presentation" class="col-lg-2 text-center">
+					<li role="presentation" class="col-md-2 text-center">
 						<a id="logo" href="index.html"><img id="logoImg" src="../images/bgImages/logo.png" /></a>
 					</li>
-					<li role="presentation" class="col-lg-2 text-center">
+					<li role="presentation" class="col-md-2 text-center">
 						<a href="achieve.html">成果</a>
 					</li>
-					<li role="presentation" class="col-lg-2 text-center">
+					<li role="presentation" class="col-md-2 text-center">
 						<a href="about.html">关于</a>
 					</li>
-					<li role="presentation" class="col-lg-1 text-center active">
+					<li role="presentation" class="col-md-1 text-center active">
 						<a id="search" href="search.html"></a>
 					</li>
 				</ul>
@@ -40,47 +41,96 @@
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<ul>
-						<li><img src="../images/icon/item1.png"/></li>
-						<li><img src="../images/icon/item2.png"/></li>
-						<li><img src="../images/icon/item3.png"/></li>
-						<li><img src="../images/icon/item4.png"/></li>
-						<li><img src="../images/icon/item5.png"/></li>
-						<li><img src="../images/icon/item6.png"/></li>
-						<li><img src="../images/icon/item7.png"/></li>
-						<li><img src="../images/icon/item8.png"/></li>
+							<li id="item">
+								<div id="content1" class="hidden">
+									<p id="place">香格里拉</p>
+									<p id="listTime">2017</p>
+									<a href="listHomePage.html">查看详情</a>
+								</div>
+								<img src="../images/icon/item1.png" />
+							</li>
+							<li id="item">
+								<div  id="content2"  class="hidden">
+									<p id="place">呼伦贝尔</p>
+									<p id="listTime">2016</p>
+									<a href="#">查看详情</a>
+								</div>
+								<img src="../images/icon/item2.png" />
+							</li>
+							<li id="item">
+								<div id="content3" class="hidden">
+									<p id="place">青海三江源</p>
+									<p id="listTime">2015</p>
+									<a href="#">查看详情</a>
+								</div>
+								<img src="../images/icon/item3.png" />
+							</li>
+							<li id="item">
+								<div id="content4" class="hidden">
+									<p id="place">湖南隆回</p>
+									<p id="listTime">2015</p>
+									<a href="#">查看详情</a>
+								</div>
+								<img src="../images/icon/item4.png" />
+							</li>
+							<li id="item">
+								<div id="content5" class="hidden">
+									<p id="place">四川雅安</p>
+									<p id="listTime">2014</p>
+									<a href="#">查看详情</a>
+								</div><img src="../images/icon/item5.png" />
+							</li>
+							<li id="item">
+								<div id="content6" class="hidden">
+									<p id="place">重庆酉阳</p>
+									<p id="listTime">2013</p>
+									<a href="#">查看详情</a>
+								</div>
+								<img src="../images/icon/item6.png" />
+							</li>
+							<li id="item">
+								<div id="content7" class="hidden">
+									<p id="place">新疆</p>
+									<p id="listTime">2012</p>
+									<a href="#">查看详情</a>
+								</div><img src="../images/icon/item7.png" />
+							</li>
+							<li id="item">
+								<div id="content8" class="hidden">
+									<p id="place">湖南通道</p>
+									<p id="listTime">2009-2017</p>
+									<a href="#">查看详情</a>
+								</div>
+								<img src="../images/icon/item8.png" />
+							</li>
 						</ul>
 					</div>
 					<div class="swiper-slide">Slide 1</div>
-					<div class="swiper-slide">Slide 2</div>
-					<div class="swiper-slide">Slide 3</div>
 				</div>
 				<!-- 如果需要分页器 -->
-				<div class="swiper-pagination"></div>
-	
+				<!--<div class="swiper-pagination"></div>-->
+
 				<!-- 如果需要导航按钮 -->
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
-	
+
 				<!-- 如果需要滚动条 -->
-				<div class="swiper-scrollbar"></div>
+				<!--<div class="swiper-scrollbar"></div>-->
 			</div>
 		</div>
-		
 
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/lib/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/lib/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/home.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			var mySwiper = new Swiper('.swiper-container', {
-//				direction: 'vertical',
 				loop: true,
-
-				// 如果需要分页器
-				pagination: {
-					el: '.swiper-pagination',
-				},
-
-				// 如果需要前进后退按钮
+//				// 如果需要分页器
+//				pagination: {
+//					el: '.swiper-pagination',
+//				},
+//				// 如果需要前进后退按钮
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',

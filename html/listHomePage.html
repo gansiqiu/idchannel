@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/lib/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/lib/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../css/lib/animation.css"/>
+		<style>
+			html,
+			body {
+				position: relative;
+				height: 100%;
+			}
+			
+			body {
+				background: #eee;
+				font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+				font-size: 14px;
+				margin: 0;
+				padding: 0;
+			}
+			#listTitle{
+				width: 16%;height: 40%;margin-top: 20%;background: pink;position: absolute;left: 16%;background: url(../images/icon/item8.png)no-repeat top center;
+				border: solid 2px rgba(100,96,84,0.7);
+			}
+			.swiper-container {
+				position: absolute;
+				left: 35%;
+				margin-top: 20%;
+				width: 50%;
+				height: 40%;
+			}
+			
+			.swiper-slide {
+				-webkit-writing-mode: vertical-rl;  
+            	writing-mode: tb-rl; 
+				width: 12%;
+				text-align: center;
+				font-size: 22px;
+				background: #fff;
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-pack: center;
+				-ms-flex-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-ms-flex-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+		</style>
+	</head>
+
+	<body style="background:url(../images/bgImages/bg_about.png);">
+		<div id="listTitle">
+			<p style="color: white;font-size: 20px;text-align: center;margin-top: 200px;">湖南通道</p>
+			<p style="color: white;font-size: 20px;text-align: center;">2009-2017</p>
+			<p style="text-align: center;font-size: 18px; border: solid 2px white; border-radius: 15px; color: white;">项目主页</p>
+		</div>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<span>总宣传片</span>
+					<img style="width: 400px;height: 100%;position: absolute;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
+				</div>
+				<div class="swiper-slide">
+					<span>
+						儿童片
+					</span>
+					<img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
+				</div>
+				<div class="swiper-slide">剪纸情绪片</div>
+				<div class="swiper-slide">建筑投影片</div>
+				<div class="swiper-slide">手工之美</div>
+				<div class="swiper-slide">天地欢歌</div>
+				<div class="swiper-slide">滩头年画</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+				<div class="swiper-slide">Slide 10</div>
+			</div>
+		</div>
+
+		<!-- Swiper JS -->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/lib/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/listHomePage.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Initialize Swiper -->
+		<script>
+			var swiper = new Swiper('.swiper-container', {
+				slidesPerView: 8,
+				spaceBetween: 30,
+				breakpoints: {
+					1024: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+					640: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					}
+				}
+			});
+		</script>
+	</body>
+
+</html>
