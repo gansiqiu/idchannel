@@ -1,4 +1,3 @@
-
 $("div[class='swiper-slide']").each(function(index){
 		$(this).hover(function(){
 			$(this).children('span').addClass("animated flipOutY");

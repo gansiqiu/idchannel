@@ -22,24 +22,25 @@
 				padding: 0;
 			}
 			#listTitle{
-				width: 16%;height: 40%;margin-top: 20%;background: pink;position: absolute;left: 16%;background: url(../images/icon/item8.png)no-repeat top center;
+				width: 16%;height: 40%;margin-top: 8%;background: pink;position: absolute;left: 16%;background: url(../images/icon/item8.png)no-repeat top center;
 				border: solid 2px rgba(100,96,84,0.7);
 			}
 			.swiper-container {
 				position: absolute;
 				left: 35%;
-				margin-top: 20%;
+				margin-top: 8%;
 				width: 50%;
 				height: 40%;
 			}
 			
 			.swiper-slide {
 				-webkit-writing-mode: vertical-rl;  
-            	writing-mode: tb-rl; 
+            	writing-mode: tb-rl;
+            	color: white; 
 				width: 12%;
 				text-align: center;
 				font-size: 22px;
-				background: #fff;
+				background: rgba(100,96,84,0.7);
 				display: -webkit-box;
 				display: -ms-flexbox;
 				display: -webkit-flex;
@@ -53,40 +54,58 @@
 				-webkit-align-items: center;
 				align-items: center;
 			}
+			.clos{
+				font-size: 21px;
+				width: 40px;
+			    background: rgba(100,96,84,0.7);
+			    height: 40px;
+			    line-height: 40px;
+			    color: white;
+			    position: absolute;
+			    top: 5%;
+			    left: 15%;
+			    text-align: center;
+			}
 		</style>
 	</head>
 
-	<body style="background:url(../images/bgImages/bg_about.png);">
-		<div id="listTitle">
-			<p style="color: white;font-size: 20px;text-align: center;margin-top: 200px;">湖南通道</p>
-			<p style="color: white;font-size: 20px;text-align: center;">2009-2017</p>
-			<p style="text-align: center;font-size: 18px; border: solid 2px white; border-radius: 15px; color: white;">项目主页</p>
-		</div>
-		<div class="swiper-container">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<span>总宣传片</span>
-					<img style="width: 400px;height: 100%;position: absolute;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
-				</div>
-				<div class="swiper-slide">
-					<span>
-						儿童片
-					</span>
-					<img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
-				</div>
-				<div class="swiper-slide">剪纸情绪片</div>
-				<div class="swiper-slide">建筑投影片</div>
-				<div class="swiper-slide">手工之美</div>
-				<div class="swiper-slide">天地欢歌</div>
-				<div class="swiper-slide">滩头年画</div>
-				<div class="swiper-slide">Slide 8</div>
-				<div class="swiper-slide">Slide 9</div>
-				<div class="swiper-slide">Slide 10</div>
+	<body style="background:url(../images/bgImages/bg_technology.png)no-repeat center center;">
+		<div style="width: 100%;height: 100%;"class="">
+			<span class="clos">X</span>
+			<audio controls style="width: 200px;height: 50px;margin-top: 2%;margin-left: 70%;" src="../images/brige.mp3">sss</audio>
+			<div id="listTitle">
+				<p style="color: white;font-size: 20px;text-align: center;margin-top: 200px;">湖南通道</p>
+				<p style="color: white;font-size: 20px;text-align: center;">2009-2017</p>
+				<p style="text-align: center;font-size: 18px; border: solid 2px white; border-radius: 15px; color: white;">项目主页</p>
 			</div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<span>总宣传片</span>
+						<img style="width: 400px;height: 100%;position: absolute;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
+					</div>
+					<div class="swiper-slide">
+						<span>
+							儿童片
+						</span>
+						<img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/>
+					</div>
+					<div class="swiper-slide"><span>剪纸情绪片</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>建筑投影片</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>手工之美</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>天地欢歌</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>滩头年画</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>Slide 8</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>Slide 9</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+					<div class="swiper-slide"><span>Slide 10</span><img style="width: 400px;height: 100%;" class="hidden" src="../images/bgImages/bg_achieve.png"/></div>
+				</div>
+			</div>
+			
 		</div>
 
 		<!-- Swiper JS -->
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../js/lib/bootstrap.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/lib/swiper.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/listHomePage.js" type="text/javascript" charset="utf-8"></script>
 

@@ -1,0 +1,15 @@
+
+.technology {
+	background: pink;
+	margin-top: 40px;
+	margin-left: 10%;
+}
+.technology ul li{
+	font-size: 18px;
+	margin-left: 2%;
+	list-style-type: none;
+	display: inline-block;
+}
+.technology ul li a{
+	text-decoration: none;
+}
