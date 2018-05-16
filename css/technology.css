@@ -1,15 +1,41 @@
 
-.technology {
-	background: pink;
-	margin-top: 40px;
-	margin-left: 10%;
+.technology, .content{
+	width: 65%;
+	/*background: pink;*/
+	margin-top: 20px;
+	margin-left: 15%;
 }
-.technology ul li{
+.technology #technologyTitle, .content #contentTitle{
+	color: white;
 	font-size: 18px;
-	margin-left: 2%;
-	list-style-type: none;
-	display: inline-block;
 }
-.technology ul li a{
-	text-decoration: none;
+
+.technology span, .content span{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.technology button, .content button{
+	margin-left: 10px;
+}
+.technology .active, .content .active{
+	background: orange;
+}
+#contentChoose{
+	width: 60%; 
+	position: absolute;
+    top: 19%;
+    left: 5%;
+}
+#contentChoose ul{
+	background: none;
+}
+.thumbnail{
+	background: none;
+	border: none;
+}
+.caption span{
+	color: white;
+}
+.caption img{
+	margin-left: 15%;
 }

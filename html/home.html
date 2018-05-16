@@ -12,7 +12,7 @@
 
 	</head>
 
-	<body style="background: url(../images/bgImages/bg_item.png)repeat center center;">
+	<body style="background: url(../images/bgImages/bg_item.png)repeat top center;background-size:cover;overflow-x:hidden ">
 		<div class="container-fluid">
 			<div class="row">
 				<ul class="nav nav-tabs col-md-12">
@@ -37,7 +37,7 @@
 					</li>
 				</ul>
 			</div>
-			<div class="swiper-container">
+			<div id="swiper-container1" class="swiper-container">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
 						<ul>
@@ -45,12 +45,12 @@
 								<div id="content1" class="hidden">
 									<p id="place">香格里拉</p>
 									<p id="listTime">2017</p>
-									<a href="listHomePage.html">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item1.png" />
 							</li>
 							<li id="item">
-								<div  id="content2"  class="hidden">
+								<div id="content2" class="hidden">
 									<p id="place">呼伦贝尔</p>
 									<p id="listTime">2016</p>
 									<a href="#">查看详情</a>
@@ -105,17 +105,43 @@
 							</li>
 						</ul>
 					</div>
-					<div class="swiper-slide">Slide 1</div>
+					<!--<div class="swiper-slide">Slide 1</div>-->
 				</div>
 				<!-- 如果需要分页器 -->
 				<!--<div class="swiper-pagination"></div>-->
 
 				<!-- 如果需要导航按钮 -->
-				<div class="swiper-button-prev"></div>
-				<div class="swiper-button-next"></div>
+				<!--<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>-->
 
 				<!-- 如果需要滚动条 -->
 				<!--<div class="swiper-scrollbar"></div>-->
+			</div>
+		</div>
+		<div id="screenModel" class="hidden">
+			<div style="width: 100%;height: 100%;">
+				<span class="clos">X</span>
+				<audio controls src="../images/brige.mp3">sss</audio>
+				<div id="listTitle">
+					<p class="place" style="margin-top: 200px;">湖南通道</p>
+					<p class="time">2009-2017</p>
+					<p class="listTitle">项目主页</p>
+				</div>
+				<div id="swiper-container2" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div id="swiper-slide" class="swiper-slide"><span>总宣传片</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>儿童片</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>剪纸情绪片</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>建筑投影片</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>手工之美</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>天地欢歌</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>滩头年画</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>Slide 8</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>Slide 9</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+						<div id="swiper-slide" class="swiper-slide"><span>Slide 10</span><img class="hidden" src="../images/bgImages/bg_achieve.png" /></div>
+					</div>
+				</div>
+
 			</div>
 		</div>
 
@@ -124,18 +150,19 @@
 		<script src="../js/lib/swiper.js" type="text/javascript" charset="utf-8"></script>
 		<script src="../js/home.js" type="text/javascript" charset="utf-8"></script>
 		<script>
-			var mySwiper = new Swiper('.swiper-container', {
+			var mySwiper = new Swiper('#swiper-container1', {
 				loop: true,
-//				// 如果需要分页器
-//				pagination: {
-//					el: '.swiper-pagination',
-//				},
-//				// 如果需要前进后退按钮
+				//				// 如果需要分页器
+				//				pagination: {
+				//					el: '.swiper-pagination',
+				//				},
+				//				// 如果需要前进后退按钮
 				navigation: {
 					nextEl: '.swiper-button-next',
 					prevEl: '.swiper-button-prev',
 				}
 			})
+			
 		</script>
 	</body>
 

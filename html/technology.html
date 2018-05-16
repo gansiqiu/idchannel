@@ -1,45 +1,242 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="../css/home.css" />
 		<link rel="stylesheet" type="text/css" href="../css/lib/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" href="../css/technology.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/basic.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/technology.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
 	</head>
-	<body style="background: url(../images/bgImages/bg_technology.png)no-repeat top center;">
+
+	<body style="background: url(../images/bgImages/bg_technology.png)no-repeat top center;background-size:cover; ">
 		<div class="container-fluid">
 			<div class="row">
-				<ul class="nav nav-tabs col-lg-12">
-					<li role="presentation" class="col-lg-1 text-center">&ensp;</li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="home.html">项目</a></li>
-					<li role="presentation" class="col-lg-2 text-center active"><a href="technology.html">工艺</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a id="logo" href="index.html"><img id="logoImg" src="../images/bgImages/logo.png"/></a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="achieve.html">成果</a></li>
-					<li role="presentation" class="col-lg-2 text-center"><a href="about.html">关于</a></li>
-					<li role="presentation" class="col-lg-1 text-center active"><a id="search" href="search.html"></a></li>
+				<ul class="nav nav-tabs col-md-12 col-lg-12">
+					<li role="presentation" class="col-lg-1 col-md-1 text-center">&ensp;</li>
+					<li role="presentation" class="col-lg-2 text-center">
+						<a href="home.html">项目</a>
+					</li>
+					<li role="presentation" class="col-lg-2 col-md-2 text-center active">
+						<a href="technology.html">工艺</a>
+					</li>
+					<li role="presentation" class="col-lg-2 col-md-2 text-center">
+						<a id="logo" href="index.html"><img id="logoImg" src="../images/bgImages/logo.png" /></a>
+					</li>
+					<li role="presentation" class="col-lg-2 col-md-2 text-center">
+						<a href="achieve.html">成果</a>
+					</li>
+					<li role="presentation" class="col-lg-2 col-md-2 text-center">
+						<a href="about.html">关于</a>
+					</li>
+					<li role="presentation" class="col-lg-1 col-md-1 text-center">
+						<a id="search" href="search.html"></a>
+					</li>
 				</ul>
 			</div>
 		</div>
+
 		<div class="technology">
-			<ul>
+			<span id="technologyTitle">
+				工艺
+			</span>
+			<button type="button" id="technologyItem" class="btn btn-default">全部</button>
+			<button type="button" id="technologyItem" class="btn btn-default">桃花</button>
+			<button type="button" id="technologyItem" class="btn btn-default">黑陶</button>
+			<button type="button" id="technologyItem" class="btn btn-default">纺织</button>
+			<button type="button" id="technologyItem" class="btn btn-default active">造纸</button>
+			<button type="button" id="technologyItem" class="btn btn-default">烙画</button>
+			<button type="button" id="technologyItem" class="btn btn-default">唐卡</button>
+			<button type="button" id="technologyItem" class="btn btn-default">呼麦</button>
+			<button type="button" id="technologyItem" class="btn btn-default">剪纸</button>
+			<button type="button" id="technologyItem" class="btn btn-default">皮制</button>
+			<button type="button" id="technologyItem" class="btn btn-default">雕花</button>
+			<!--<ul>
 				<li>工艺</li>
-				<li><a href="">全部</a></li>
-				<li><a href="">桃花</a></li>
-				<li><a href="">黑陶</a></li>
-				<li><a href="">纺织</a></li>
-				<li><a href="">造纸</a></li>
-				<li><a href="">烙画</a></li>
-				<li><a href="">唐卡</a></li>
-				<li><a href="">呼麦</a></li>
-				<li><a href="">剪纸</a></li>
-				<li><a href="">皮制</a></li>
-				<li><a href="">雕花</a></li>
-			</ul>
+				<li><div>全部</div></li>
+				<li><div>桃花</div></li>
+				<li><div>黑陶</div></li>
+				<li><div>纺织</div></li>
+				<li><div>造纸</div></li>
+				<li><div>烙画</div></li>
+				<li><div>唐卡</div></li>
+				<li><div>呼麦</div></li>
+				<li><div>剪纸</div></li>
+				<li><div>皮制</div></li>
+				<li><div>雕花</div></li>
+			</ul>-->
 		</div>
-		
+		<div class="content">
+			<span id="contentTitle">
+				内容
+			</span>
+			<button type="button" id="contentItem" class="btn btn-default active">全部</button>
+			<button type="button" id="contentItem" class="btn btn-default">服饰</button>
+			<button type="button" id="contentItem" class="btn btn-default">宣传</button>
+			<button type="button" id="contentItem" class="btn btn-default">社区</button>
+			<button type="button" id="contentItem" class="btn btn-default">儿童</button>
+			<!--<ul>
+				<li>内容</li>
+				<li><div>全部</div></li>
+				<li><div>服饰</div></li>
+				<li><div>宣传</div></li>
+				<li><div>社区</div></li>
+				<li><div>儿童</div></li>
+			</ul>-->
+		</div>
+		<div class="" style="margin:20px auto;padding-top: 60px;background: rgba(165,142,137,0.6);width: 80%;border: solid 2px rgba(165,142,137,0.9);">
+			<div class="container-fluid" id="contentChoose">
+				<div class="row">
+					<div class="col-md-4 col-lg-4"></div>
+					<ul class="nav nav-tabs col-md-8 col-lg-8">
+						<li id="contentChooseItem" role="presentation" class="col-md-6 col-lg-6 text-center"><a href="#">最新发布</a></li>
+						<li id="contentChooseItem" role="presentation" class="col-md-6 col-lg-6 text-center"><a href="#">热门观看</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="container" style="margin:0 auto;overflow: scroll;max-height: 600px;width: 100%;overflow-x: hidden;">
+				<div class="row" >
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row" >
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+				</div><div class="row" >
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4 col-md-3">
+						<div class="thumbnail">
+							<img src="../images/bgImages/bg_about.png" alt="...">
+							<div class="caption">
+								<h3><span>人文</span>&ensp;<span>|</span>&ensp;<span>侗族自然神崇拜</span></h3>
+								<span>2017-03-25</span>
+								<img src="../images/icon/eye.png"/>
+								<span>233</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 		<script src="../js/lib/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/technology.js" type="text/javascript" charset="utf-8"></script>
 	</body>
+
 </html>
