@@ -20,6 +20,7 @@ a{
 }
 #logo{
 	margin-top: -10px;
+	height: 60px;
 }
 #channel{
 	background: url(../images/icon/logo.png)no-repeat center center;
@@ -30,10 +31,14 @@ a{
 	margin: 5px;
 }
 #search{
-	border: none;
 	margin-top: 5px;
-	height: 40px;
-	background: url(../images/icon/search.png)no-repeat center center;
+	height: 59px;
+}
+.nav-tabs a{
+	height: 50px;
+}
+#search{
+	margin-top: -10px;
 }
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
 	color: white;
