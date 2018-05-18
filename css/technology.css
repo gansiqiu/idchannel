@@ -1,55 +1,77 @@
 
 .technology, .content{
-	width: 65%;
-	/*background: pink;*/
+	width: 70%;
 	margin-top: 20px;
 	margin-left: 15%;
+	
 }
 .technology #technologyTitle, .content #contentTitle{
-	color: white;
-	font-size: 18px;
-}
-
-.technology span, .content span{
-	margin-left: 20px;
+	font-family: PingFangSC-Semibold;
+	font-size: 22px;
+	color: #FFFFFF;
+	letter-spacing: 0;
 	margin-right: 20px;
+	height: 40px;
+	line-height: 40px;
 }
 .technology button, .content button{
-	margin-left: 10px;
+	width: 70px;
+	height: 40px;
+	margin-top: -5px;
+	margin-left: 20px;
+	font-size: 22px;
+	color: #FFFFFFFF;
+	background: none;
+	letter-spacing: 0;
+	border: none;
 }
 .technology .active, .content .active{
-	background: orange;
+	background: rgba(0,0,0,0.2);
+	border-radius: 2px;
+	color: rgba(255,255,255,1);
 }
-#contentChoose{
-	width: 60%; 
-	position: absolute;
-    top: 19%;
-    left: 5%;
+
+
+/*透明框*/
+#showList{
+	margin:20px auto;background: rgba(255,255,255,0.10);width: 80%;border: 2px solid rgba(255,255,255,0.20);
 }
-#contentChoose ul{
+#showList #contentChoose ul{
+	height: 70px;
 	background: none;
 }
-.thumbnail{
+#showList #contentChoose ul li a{
+	font-size: 22px;
+	height: 50px;
+	border-radius: 2px;
+}
+
+#showList .thumbnail{
 	background: none;
 	border: none;
 }
-.caption span{
+#showList .caption span{
+	font-size: 24px;
 	color: white;
 }
-.caption img{
-	margin-left: 15%;
+#showList .caption #eyeNum{
+	font-size: 20px;
 }
-.container::-webkit-scrollbar {/*滚动条整体样式*/
+#showList .caption img{
+	margin-left: 40%;
+	margin-top: -5px;
+}
+#showList .container::-webkit-scrollbar {/*滚动条整体样式*/
 	border-radius: 10px;
     width: 8px;    
     background: gray;
 }
-.container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+#showList .container::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
    	border-radius: 10px;
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     background: #535353;
 }
-.container::-webkit-scrollbar-track {/*滚动条里面轨道*/
+#showList .container::-webkit-scrollbar-track {/*滚动条里面轨道*/
     -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     border-radius: 10px;
     background: #EDEDED;

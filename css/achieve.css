@@ -1,25 +1,53 @@
+@font-face {
+    font-family: PingFangSC-Regular;
+    src: url(fonts/PingFang-Regular.ttf);
+    /*src: url(fonts/bg_about.png);*/
+}
 #achieve{
-	margin-top: 50px;
+	margin-top: 40px;
 }
 #achieve ul{
+	height: 60px;
 	background: none;
+}
+#achieve ul li{
+	border-bottom: 1px solid rgba(255,255,255,0.6);
+	height: 60px;
+}
+#achieve ul li a{
+	font-size: 24px;
+	height: 60px;
+}
+
+#contentList{
+	width: 88.2%;
+}
+#contentList .list-group{
+	max-height: 740px;overflow-x: hidden;margin-top: 20px;
 }
 .list-group-item{
 	cursor: pointer;
 	width: 100%;
 	height: 20%;
 	margin-top: 15px;
-	background: rgba(72, 72, 70, 0.4);
+	background: rgba(255,255,255,0.10);
+	border: 2px solid rgba(255,255,255,0.20);
 }
 .list-group-item h2{
-	color: white;
+	font-family: PingFangSC-Semibold;
+	font-size: 24px;
+	color: #FFFFFF;
 }
 .list-group-item h3{
-	color: #B1ACA9;
+	font-size: 22px;
+	color: #FFFFFF;
+	opacity: 0.8;
+	line-height: 30px;
+	font-family: PingFangSC-Regular;
 	display: -webkit-box;
--webkit-box-orient: vertical;
--webkit-line-clamp: 2;
-overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
 }
 
 
@@ -33,34 +61,55 @@ overflow: hidden;
 	z-index: 999;
 }
 
-#textContent{
-	color: white;
-	background: rgba(100, 96, 84, 0.7);
-	width: 80%;
-	margin: 100px auto;
-	padding: 10px 40px;	
-	letter-spacing: 3px;
-}
-#textContent h2,#textContent h3{
-	text-align: center;
-}
-#textContent h4{
-	text-indent: 2em;
-}
-.clos{
+#screenModel .clos{
 	cursor: pointer;
-	font-size: 21px;
+	font-size: 43px;
 	width: 40px;
-	background: rgba(100, 96, 84, 0.4);
 	height: 40px;
 	line-height: 40px;
 	color: white;
 	position: absolute;
 	top: 5%;
-	left: 10%;
+	left: 2.8%;
+	text-align: center;
+	background: rgba(100, 96, 84, 0);
+}
+#screenModel #textContent{
+	color: white;
+	width: 88.2%;
+	margin: 100px auto;
+	padding: 10px 40px;	
+	letter-spacing: 3px;overflow: scroll;
+	max-height: 800px;overflow-x: hidden;
+	background: rgba(255,255,255,0.10);
+	border: 2px solid rgba(255,255,255,0.20);
+}
+#screenModel #textContent h2,#textContent h3,hr{
 	text-align: center;
 }
+#screenModel #textContent h4{
+	text-indent: 2em;
+	line-height: 36px;
+}
+#screenModel #textContent h2,
+#screenModel #textContent h3,
+#screenModel #textContent #title,
+#screenModel #textContent #keyworld,
+#screenModel #textContent h4{
+	font-family: PingFangSC-Semibold;
+	font-size: 24px;
+	color: #FFFFFF;
+}
 
+#screenModel #textContent #title,
+#screenModel #textContent #keyworld{
+		text-indent: 0;
+}
+hr{
+	width: 62.5%;
+	opacity: 0.2;
+border: 1px solid #FFFFFF;
+}
 /*滚动条设置*/
 .list-group::-webkit-scrollbar {/*滚动条整体样式*/
 	border-radius: 10px;

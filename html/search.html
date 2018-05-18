@@ -41,7 +41,7 @@
 				<div class="col-lg-1"></div>
 				<div class="col-lg-10">
 					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Search for...">
+						<input type="text" class="form-control">
 						<span class="input-group-btn">
 				        <button class="btn btn-default" type="button">
 				        	<img src="../images/icon/search.png"/>	
@@ -52,32 +52,50 @@
 				</div>
 				<!--/.col-lg-6 -->
 			</div>
-			<div id="resultRow" class="row">
+			<div id="resultRow" class="row hidden">
 				<div class="col-lg-1"></div>
 				<div class="col-lg-3" >
-					<ul class="list-group" style="height: auto;overflow: auto;max-height: 400px;">
-					  	<li class="list-group-item"><a href="#">ras justo odioCras justo odio</a></li>
-					  	<li class="list-group-item"><a href="#">Dapibus ac facilisis in</a></li>
-					  	<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-					  	<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
-					  	<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
-					  	<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-					  	<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
-					  	<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
-					  	<li class="list-group-item"><a href="#">Morbi leo risus</a></li>
-					  	<li class="list-group-item"><a href="#">Porta ac consectetur ac</a></li>
-					  	<li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+					<ul class="list-group">
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
+					  	<li class="list-group-item"><a href="#">香格里拉风景片</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-7" style="height: 400px;background: white;margin-left: -15px;">
-						<img src="../images/bgImages/bg_achieve.png"  style="width: 80%;height: auto;margin: 20px 10%;"/>
+				<div id="resultRight" class="col-lg-7">
+						<img  src="../images/bgImages/bg_achieve.png"  style="width: 80%;height: auto;margin: 4.5% 10%;"/>
 						<span id="vedioTime">07:20</span>
-						<a href="">
+						<!--<a href="">
 							<img id="playImg" src="../images/icon/stop.png"/>
-						</a>
-						<p style="width: 80%;height: auto;margin:0 10%;font-weight: bold;font-size: 18px;">香格里拉</p>
+						</a>-->
+						<p style="font-family: PingFangSC-Regular;width: 80%;height: auto;margin:0 10%;font-size: 20px;color: #4A4A4A;">香格里拉</p>
 				</div>
 			</div>
+			<div id="searchBox">
+				<p id="popularSearchesTitle">热门搜索</p>
+				<ul id="popularSearchesItems">
+					<li><a href="">剪纸</a></li>
+					<li><a href="">挑花</a></li>
+					<li><a href="">三江源</a></li>
+					<li><a href="">香格里拉</a></li>
+					<li><a href="">儿童</a></li>
+					<li><a href="">服饰</a></li>
+				</ul>
+				<p id="histroySearchesTitle">搜索历史</p>
+				<ul id="histroySearchesItems">
+					<li><a href="">黑陶</a></li>
+					<li><a href="">花瑶</a></li>
+				</ul>
+			</div>
+			
+			
 		</div>
 
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>

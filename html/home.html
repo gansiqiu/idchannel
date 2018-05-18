@@ -51,7 +51,7 @@
 								<div id="content2" class="hidden">
 									<p id="place">呼伦贝尔</p>
 									<p id="listTime">2016</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item2.png" />
 							</li>
@@ -59,7 +59,7 @@
 								<div id="content3" class="hidden">
 									<p id="place">青海三江源</p>
 									<p id="listTime">2015</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item3.png" />
 							</li>
@@ -67,7 +67,7 @@
 								<div id="content4" class="hidden">
 									<p id="place">湖南隆回</p>
 									<p id="listTime">2015</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item4.png" />
 							</li>
@@ -75,14 +75,14 @@
 								<div id="content5" class="hidden">
 									<p id="place">四川雅安</p>
 									<p id="listTime">2014</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div><img src="../images/icon/item5.png" />
 							</li>
 							<li id="item">
 								<div id="content6" class="hidden">
 									<p id="place">重庆酉阳</p>
 									<p id="listTime">2013</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item6.png" />
 							</li>
@@ -90,14 +90,14 @@
 								<div id="content7" class="hidden">
 									<p id="place">新疆</p>
 									<p id="listTime">2012</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div><img src="../images/icon/item7.png" />
 							</li>
 							<li id="item">
 								<div id="content8" class="hidden">
 									<p id="place">湖南通道</p>
 									<p id="listTime">2009-2017</p>
-									<a href="#">查看详情</a>
+									<a id="detail" href="#">查看详情</a>
 								</div>
 								<img src="../images/icon/item8.png" />
 							</li>
@@ -117,14 +117,14 @@
 			</div>
 		</div>
 		
-		<div id="screenModel" class="">
+		<div id="screenModel" class="hidden">
 			<div style="width: 100%;height: 100%;">
 				<span class="clos">X</span>
 				<img id="playMusicImg" src="../images/icon/playmusic.png"/>
 				<audio class="hidden" controls src="../images/brige.mp3"></audio>
 				<div id="listTitle">
 					<img id="listTitleImg" src="../images/icon/item6.png"/>
-					<p class="place" style="margin-top: 200px;">湖南通道</p>
+					<p class="place">湖南通道</p>
 					<p class="time">2009-2017</p>
 					<p class="listTitle">项目主页</p>
 				</div>
@@ -163,7 +163,28 @@
 					prevEl: '.swiper-button-prev',
 				}
 			})
-			
+			var swiper = new Swiper('#swiper-container2', {
+				slidesPerView: 8,
+				spaceBetween: 30,
+				breakpoints: {
+					1024: {
+						slidesPerView: 4,
+						spaceBetween: 40,
+					},
+					768: {
+						slidesPerView: 3,
+						spaceBetween: 30,
+					},
+					640: {
+						slidesPerView: 2,
+						spaceBetween: 20,
+					},
+					320: {
+						slidesPerView: 1,
+						spaceBetween: 10,
+					}
+				}
+			});
 		</script>
 	</body>
 

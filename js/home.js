@@ -19,15 +19,14 @@ $("li[id='item']").each(function(index){
 	})
 })
 
-var timer = 0;
 $("div[id='swiper-slide']").each(function(index){
-	$(this).hover(function(){
+	$(this).click(function(){
 			$(this).children('span').addClass("animated flipOutY");
 			$(this).children('span').addClass("hidden");
 			$(this).children('img').removeClass("hidden");
 			$(this).children('img').removeClass("animated flipOutY");
 			$(this).children('img').addClass("animated flipInY");
-			$(this).animate({width:'400px'},"slow");
+			$(this).animate({width:'740px'},"slow");
 	})
 })
 
@@ -38,7 +37,7 @@ $("div[id='swiper-slide']").each(function(index){
 			$(this).children('span').removeClass("animated flipOutY");
 			$(this).children('span').addClass("animated flipInY");
 			$(this).children('span').removeClass("hidden");
-			$(this).animate({width:'12%'},"slow");
+			$(this).animate({width:'100px'},"slow");
 		})
 })
 
@@ -81,6 +80,7 @@ $(".clos").bind("click",function(){
 	$(".container-fluid").removeClass("animated slideOutLeft");
 	$(".container-fluid").addClass("animated slideInLeft");
 })
+
 $(".listTitle").bind("click",function(){
 	$("#screenModel").removeClass("animated slideInRight");
 	$("#screenModel").addClass("animated slideOutRight");
